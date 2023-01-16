@@ -13,6 +13,50 @@ Pizza Gang is a website that allows users to order pizzas or other food items, t
 
 ## Demo
 
+### Add Items to Cart
+
+### Remove Items From Cart
+
+### Update Quantity of Item(s) in Cart
+
+### View Empty Cart
+
+### Checkout
+
+### Track Order
+
+
+### Login Page
+#### Logging In
+#### Register For Account
+
+### Customer Dashboard
+
+#### Apply Promo Code
+
+#### Remove Promo Code
+
+#### My Orders View
+
+#### Reorder
+
+#### Redeem Pizza Points
+##### Pizza points are refunded if the free pizza added to the cart is removed
+
+### Admin Dashboard
+![admin dashboard](https://user-images.githubusercontent.com/75509901/212752700-497c1d29-86d3-436e-920d-48d0175c1ef7.PNG)
+
+#### All Orders View
+
+##### Change 
+
+#### All Menu Items View
+
+
+
+#### All Promotions View
+
+
 ## Instructions to Run Locally
 
 ### CREDENTIALS:
