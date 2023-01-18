@@ -48,7 +48,7 @@ Pizza Gang is a website that allows users to order pizzas or other food items, t
 <img src="https://user-images.githubusercontent.com/75509901/213082223-aa24f23c-8260-4db6-956e-9153783c0c8a.gif" height="370">
 
 #### Redeem Pizza Points
-##### Pizza points are refunded if the free pizza added to the cart is removed and are only consumed when checkout is confirmed
+##### Pizza points are refunded if the free pizza added to the cart is removed and are only consumed when checkout is confirmed. Members can earn 1 pizza point per every RM 30 spent in an order
 <img src="https://user-images.githubusercontent.com/75509901/213082253-9ba9c8d0-d5a7-48fa-9fdf-0f99bfba7f2e.gif" height="370">
 
 ### Admin Functionalities
