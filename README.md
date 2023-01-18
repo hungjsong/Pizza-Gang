@@ -7,55 +7,76 @@ Pizza Gang is a website that allows users to order pizzas or other food items, t
 2. Some actions are only accessible by certain member types.
 3. Only admins can create, update, or delete menu items and promotions along with viewing all orders.
 4. Only members can access "my orders" (viewing orders that belong to them based on their user id).
-5. Only members and guests can add items to cart and place an order.
+5. Only members and visitors can add items to cart and place an order.
 6. Only admins and members can access the promotion page.
 7. Only members can apply promo codes to their order.
 
 ## Demo
+### Register For Account and Logging In
+#### Registration will fail if the desired username is already in use
+<img src="https://user-images.githubusercontent.com/75509901/213091485-e875cb27-2707-4f6b-8078-2ffffd877ceb.gif" height="370">
 
-### Add Items to Cart
+### Customer Functionalities
+#### Add Items to Cart
+<img src="https://user-images.githubusercontent.com/75509901/213100036-0ac60ab3-0263-48b6-9e5d-9f5748707017.gif" height="370">
 
-### Remove Items From Cart
+#### Remove Items From Cart
+<img src="https://user-images.githubusercontent.com/75509901/213082065-db7844da-f9da-42a1-a424-a2d68dbffd4c.gif" height="370">
 
-### Update Quantity of Item(s) in Cart
+#### Update Quantity of Item(s) in Cart
+<img src="https://user-images.githubusercontent.com/75509901/213082092-d97e0e32-96c8-479b-a057-c1e0e69e6649.gif" height="370">
 
-### View Empty Cart
+#### View Empty Cart
+<img src="https://user-images.githubusercontent.com/75509901/213082104-5b3ba1bc-3da3-4350-af10-b477227bf5d9.gif" height="370">
 
-### Checkout
+#### Checkout
+<img src="https://user-images.githubusercontent.com/75509901/213082116-ad749425-36d2-4adc-bbba-51d8ae7e156a.gif" height="370">
 
-### Track Order
+#### Track Order
+<img src="https://user-images.githubusercontent.com/75509901/213082127-3f0b0b8d-b24b-4c7b-8434-98ddf8a9a254.gif" height="370">
 
-
-### Login Page
-#### Logging In
-#### Register For Account
-
-### Customer Dashboard
-
+### Pizza Gang Member Functionalities
 #### Apply Promo Code
+<img src="https://user-images.githubusercontent.com/75509901/213082196-82639c78-fb2f-4731-bf16-89b3c9191ac3.gif" height="370">
 
 #### Remove Promo Code
+<img src="https://user-images.githubusercontent.com/75509901/213082206-d3684101-42d7-4907-abbf-e9320584bc2d.gif" height="370">
 
 #### My Orders View
-
+##### Members are able to view previously made orders and are able to reorder them, which places all of the items of the order into the cart
 #### Reorder
+<img src="https://user-images.githubusercontent.com/75509901/213082223-aa24f23c-8260-4db6-956e-9153783c0c8a.gif" height="370">
 
 #### Redeem Pizza Points
-##### Pizza points are refunded if the free pizza added to the cart is removed
+##### Pizza points are refunded if the free pizza added to the cart is removed and are only consumed when checkout is confirmed
+<img src="https://user-images.githubusercontent.com/75509901/213082253-9ba9c8d0-d5a7-48fa-9fdf-0f99bfba7f2e.gif" height="370">
 
-### Admin Dashboard
-![admin dashboard](https://user-images.githubusercontent.com/75509901/212752700-497c1d29-86d3-436e-920d-48d0175c1ef7.PNG)
+### Admin Functionalities
+##### Certain buttons will be greyed out for the admin and will display a warning when clicked. The reason for this (with the exception of orders) are because of foreign key constraints. If an item has been previously purchased, that is recorded in a previous order, then deleting it would cause issues. This is the same for promotions. Orders, on the other hand, are able to be deleted but only when its status is cancelled.
 
-#### All Orders View
+#### Add Menu Item
+<img src="https://user-images.githubusercontent.com/75509901/213091621-ee406f2a-8d5f-495e-ba65-b14a3c45bfb4.gif" height="370">
 
-##### Change 
+#### Update Menu Item
+<img src="https://user-images.githubusercontent.com/75509901/213091633-d7bb0069-8f82-49fb-840b-e354ad08684d.gif" height="370">
 
-#### All Menu Items View
+#### Delete Menu Item
+<img src="https://user-images.githubusercontent.com/75509901/213091644-54879de5-6739-4ead-9730-abbf8f568db3.gif" height="370">
 
+#### Add Promo Code
+<img src="https://user-images.githubusercontent.com/75509901/213091658-f9cc6ee0-81fc-488d-8e92-19a73ec3858c.gif" height="370">
 
+#### Update Promo Code
+<img src="https://user-images.githubusercontent.com/75509901/213091666-3615dab5-2a15-4462-95a7-c0cdb9692b51.gif" height="370">
 
-#### All Promotions View
+#### Delete Promo Code
+<img src="https://user-images.githubusercontent.com/75509901/213091683-b547011e-1678-4a6b-bd6f-a2cea354c77d.gif" height="370">
 
+#### Update Order Status
+<img src="https://user-images.githubusercontent.com/75509901/213100054-9cc4fe06-baa7-4c39-8f72-420393bbeb6a.gif" height="370">
+
+#### Delete Order
+<img src="https://user-images.githubusercontent.com/75509901/213091716-079b8b22-45a1-4479-856c-5433dcc40203.gif" height="370">
 
 ## Instructions to Run Locally
 
@@ -100,16 +121,7 @@ choose file, and select the database file "pizza_gang_songhj.sql"
 Opening an incognito window and accessing the site once more can allow you to login as an admin or customer,
 whichever one is the opposite of the one currently logged in. This way it's easier to test out functionalities like
 placing orders as a customer, updating its status as an admin, and checking how many points has been earned under the
-"Redeem Points" tab as a customer without having to constantly log out and log back in. Also, redeeming pizza points
-will use up the points, but they can be refunded if the free pizza is removed from the cart. Points are only committed
-when the checkout is confirmed.
-
-Certain buttons will be greyed out for the admin accompanied by a warning. The reason for this (with the exception of orders)
-are because of foreign key constraints. If an item has been previously purchased, that is recorded in a previous order,
-then deleting it would cause issues. This is the same for promotions. Orders, on the other hand, are able to be deleted but
-only when its status is cancelled. Members are able to cancel their orders from the "My Orders" tab. Since visitors do not
-have access to that tab, the only way for them to cancel is through contacting the fictional hotline on order details
-of a tracked order on the tracking page.
+"Redeem Points" tab as a customer without having to constantly log out and log back in.
 
 KNOWN BUGS:
 
